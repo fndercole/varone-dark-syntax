@@ -1,17 +1,13 @@
-# two-darkest-syntax theme
+# varone-dark-syntax theme
 
-This is a dark syntax theme for atom
+This is a dark syntax theme for Atom.
 
 ## Features
 
-- Black background.
-- White foreground.
-- Grey shades.
+- Very dark background.
+- Very light foreground.
 - Light colors for texts.
 
-## Special support
+There is a matching UI theme [Varone Dark UI](https://github.com/fndercole/varone-dark-ui). For the screenshot I use both matching themes, with Ubuntu mono font.
 
-- LaTeX
-- R
-- Markdown
-- YAML
+![Screenshots](screenshots/2016-07-08.png)
