@@ -1,4 +1,4 @@
-# varone-dark-syntax theme
+# Varone dark Syntax theme
 
 This is a dark syntax theme for Atom.
 
