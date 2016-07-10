@@ -3,7 +3,7 @@
 This is a dark syntax theme for Atom.
 
 ## Colors
-![Screenshots](screenshots/colors.svg)
+![Screenshots](screenshots/colors.png)
 
 ## Features
   - Very dark background.
