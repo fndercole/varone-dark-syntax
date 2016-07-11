@@ -205,8 +205,12 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @light-aqua;
   }
 
-  &.function  {
+  &.function {
     color: @light-pink;
+
+    &.section {
+      color: @mlight-tangerine;
+    }
 
     &.any-method {
       color: @light-yellow;
@@ -222,26 +226,29 @@ atom-text-editor .search-results .marker.current-result .region,
   &.name.function {
     color: @light-tangerine;
   }
+
   &.name.type {
     color: @light-yellow;
     text-decoration: underline;
   }
 
-  &.other.inherited-class {
-    color: @light-green;
-  }
   &.name.class, &.name.type.class {
     color: @light-tangerine;
   }
 
   &.name.section {
-    font-size: 130%;
+    font-size: 120%;
     font-weight: bold;
+    color: @light-tangerine;
   }
 
   &.name.tag {
     color: @light-pink;
     text-decoration: underline;
+  }
+
+  &.other.inherited-class {
+    color: @light-green;
   }
 
   &.other.attribute-name {
