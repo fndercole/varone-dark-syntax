@@ -68,10 +68,12 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .keyword {
-  color: @light-pink;
-
   &.control {
     color: @light-purple;
+  }
+
+  &.control.at-rule.less {
+    color: @light-pink;
   }
 
   &.operator {
@@ -92,8 +94,6 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .constant {
-  color: @light-cyan;
-
   &.character.escape {
     color: @light-aqua;
   }
@@ -119,7 +119,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.parameter.function {
-    color: @light-tangerine;
+    color: @light-orange;
   }
 }
 
@@ -146,50 +146,75 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .punctuation {
   &.definition {
+    &.begin.latex, &.end.latex {
+      color: @light-pink;
+    }
+
+    &.brackets {
+      color: @light-magenta;
+    }
+
+    &.arguments {
+      color: @light-pink;
+    }
+
     &.comment {
-      color: @light-gray;
+      color: @light-purple;
     }
 
     &.string,
     &.variable,
     &.parameters,
     &.array {
-      color: @syntax-text-color;
+      color: @light-green;
     }
 
     &.heading,
     &.identity {
-      color: @syntax-text-color;
+      color: @light-purple;
     }
 
     &.bold {
-      color: @syntax-text-color;
+      color: @light-purple;
       font-weight: bold;
     }
 
     &.italic {
-      color: @syntax-text-color;
+      color: @light-purple;
       font-style: italic;
     }
   }
 
-  &.section.embedded {
-    color: @pink;
+  &.section {
+      color: @light-pink;
+    &.group {
+      color: @light-pink;
+    }
+    &.embedded {
+      color: @light-pink;
+    }
   }
-
 }
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @light-purple;
+  }
+
+  &.constant {
+    color: @light-aqua;
   }
 
   &.function  {
-    color: @light-tangerine;
+    color: @light-pink;
 
     &.any-method {
       color: @light-yellow;
     }
+  }
+
+  &.type {
+    color: @light-tangerine;
   }
 }
 
@@ -210,7 +235,8 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.section {
-    color: @light-tangerine;
+    font-size: 130%;
+    font-weight: bold;
   }
 
   &.name.tag {
@@ -248,10 +274,21 @@ atom-text-editor .search-results .marker.current-result .region,
     background-color: @very-dark-gray;
     color: @syntax-text-color;
   }
+
+  &.footnote {
+    font-style: italic;
+    color: @very-light-gray;
+  }
 }
 
 .none {
   color: @syntax-text-color;
+}
+
+.tex, .latex {
+  &.math {
+    background-color: lighten(@ultra-dark-gray,2%);
+  }
 }
 
 .markup {
