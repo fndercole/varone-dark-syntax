@@ -224,7 +224,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
   &.name.function {
-    color: @light-tangerine;
+    color: @light-orange;
   }
 
   &.name.type {
@@ -294,7 +294,8 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .tex, .latex {
   &.math {
-    background-color: lighten(@ultra-dark-gray,2%);
+    background-color: lighten(@ultra-dark-gray,5%);
+    color: darken(@syntax-text-color,5%)
   }
 }
 
@@ -318,7 +319,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.heading .punctuation.definition.heading {
-    color: @syntax-text-color;
+    color: @light-tangerine;
   }
 
   &.inserted {
