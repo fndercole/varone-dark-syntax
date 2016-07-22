@@ -1,13 +1,13 @@
 {
   "name": "varone-dark-syntax",
   "theme": "syntax",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "This is a dark syntax theme for atom",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/varone-dark-syntax",
+  "repository": "https://github.com/fndercole/varone-dark-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
