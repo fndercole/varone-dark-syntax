@@ -112,7 +112,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .variable {
-  color: @light-tangerine;
+  color: @light-orange;
 
   &.interpolation {
     color: @tangerine;
@@ -220,8 +220,10 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .entity {
+  color: @light-orange;
+  
   &.name.function {
-    color: @light-orange;
+    color: @light-pink;
   }
 
   &.name.type {
@@ -234,7 +236,6 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.section {
-    font-variant: small-caps;
     font-weight: bold;
     color: @light-orange;
   }
@@ -302,7 +303,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .markup {
   &.bold {
-    color: @syntax-text-color;
     font-weight: bold;
   }
 
@@ -315,7 +315,6 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.italic {
-    color: @syntax-text-color;
     font-style: italic;
   }
 
