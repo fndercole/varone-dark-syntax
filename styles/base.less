@@ -146,10 +146,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .punctuation {
   &.definition {
-    &.begin.latex, &.end.latex {
-      color: @light-pink;
-    }
-
     &.brackets {
       color: @light-magenta;
     }
@@ -170,7 +166,8 @@ atom-text-editor .search-results .marker.current-result .region,
     }
 
     &.heading,
-    &.identity {
+    &.identity,
+    &.require {
       color: @light-purple;
     }
 
