@@ -325,7 +325,7 @@ atom-text-editor .search-results .marker.current-result .region,
     font-style: italic;
   }
 
-  &.heading .punctuation.definition.heading {
+  &.heading, .punctuation.definition.heading {
     color: @light-tangerine;
   }
 
@@ -339,6 +339,14 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.quote {
     color: @light-green;
+  }
+
+  &.code {
+    color: @light-gray;
+  }
+
+  &.link {
+    color: @light-cyan;
   }
 
   &.raw.inline {
