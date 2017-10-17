@@ -1,7 +1,7 @@
 {
   "name": "varone-dark-syntax",
   "theme": "syntax",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "This is a dark syntax theme for atom",
   "keywords": [
     "syntax",
