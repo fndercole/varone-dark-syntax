@@ -130,24 +130,17 @@
   color: @light-green;
 }
 
-
-  &.syntax--regexp {
-    color: @hue-1;
-
-    .syntax--source.syntax--ruby.syntax--embedded {
-      color: @hue-6-2;
-    }
-  }
-
-  &.syntax--other.syntax--link {
-    color: @hue-5;
-  }
-}
-
 .syntax--punctuation {
+
   &.syntax--definition {
+    color: @light-tangerine;
+
     &.syntax--comment {
-      color: @mono-3;
+      color: @very-light-gray;
+    }
+
+    &.syntax--string {
+      color: @light-aqua;
     }
 
     &.syntax--method-parameters,
@@ -173,6 +166,10 @@
       color: @light-pink;
       font-style: italic;
     }
+
+    &.syntax--entity {
+      color: @light-lime;
+    }
   }
 
   &.syntax--section {
@@ -186,6 +183,10 @@
     &.syntax--inner-class {
       color: @light-pink;
     }
+  }
+
+  &.syntax--terminator {
+    color: @light-yellow;
   }
 }
 
@@ -202,33 +203,6 @@
     color: @light-tangerine;
 
     &.syntax--any-method {
-      color: @hue-2;
-    }
-  }
-}
-
-.syntax--entity {
-  &.syntax--name.syntax--function {
-    color: @hue-2;
-  }
-
-  &.syntax--name.syntax--class,
-  &.syntax--name.syntax--type.syntax--class {
-    color: @hue-6-2;
-  }
-
-  &.syntax--name.syntax--section {
-    color: @hue-2;
-  }
-
-  &.syntax--name.syntax--tag {
-    color: @hue-5;
-  }
-
-  &.syntax--other.syntax--attribute-name {
-    color: @hue-6;
-
-    &.syntax--id {
       color: @light-orange;
     }
   }
@@ -237,10 +211,10 @@
 .syntax--meta {
   &.syntax--class {
     color: @light-yellow;
+  }
 
-    &.syntax--body {
-      color: @mono-1;
-    }
+  &.syntax--verbatim {
+    color: @light-gray;
   }
 
   &.syntax--method-call,
@@ -337,5 +311,16 @@
 
   &.syntax--raw {
     color: @light-gray;
+  }
+
+  &.syntax--code {
+    color: @light-gray;
+  }
+}
+
+.syntax--tex, .syntax--latex {
+  .syntax--inline.syntax--math,
+  .syntax--display.syntax--math {
+    background-color: @ultra-dark-tangerine;
   }
 }
