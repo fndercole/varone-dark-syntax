@@ -33,12 +33,12 @@
   }
 
   &.syntax--name.syntax--tag {
-    color: @hue-5;
+    color: @light-tangerine;
   }
 
   &.syntax--other.syntax--attribute-name {
     color: @light-blueberry;
-    
+
     &.syntax--class {
       color: @light-tangerine;
     }
@@ -177,8 +177,9 @@
 
   &.syntax--section {
     color: @light-purple;
+
     &.syntax--embedded {
-      color: @light-pink;
+      color: @light-gray;
     }
 
     &.syntax--method,
@@ -190,6 +191,10 @@
 
   &.syntax--terminator {
     color: @light-yellow;
+  }
+
+  &.syntax--key-value.syntax--separator {
+    color: @light-tangerine;
   }
 }
 
@@ -322,6 +327,14 @@
 
   &.syntax--code {
     color: @light-gray;
+  }
+
+  &.syntax--list {
+    color: @ultra-light-lime;
+  }
+  
+  &.syntax--strike {
+    text-decoration: line-through;
   }
 }
 
