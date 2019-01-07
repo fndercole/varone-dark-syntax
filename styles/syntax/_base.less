@@ -131,7 +131,23 @@
 }
 
 .syntax--string {
-  color: @light-green;
+  color: @hue-4;
+
+  > .syntax--source, .syntax--embedded {
+    color: @mono-1;
+  }
+
+  &.syntax--regexp {
+    color: @hue-1;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @hue-6-2;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @hue-5;
+  }
 }
 
 .syntax--punctuation {
@@ -249,7 +265,6 @@
   }
 
   &.syntax--separator {
-    background-color: #373b41;
     color: @mono-1;
   }
 
